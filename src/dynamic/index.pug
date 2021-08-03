@@ -1,0 +1,15 @@
+doctype html
+include includes/head.pug
+body(onload="load()")
+    include includes/nav.pug
+    #content
+        span.header
+            h2 SkyList
+            p Agrega tus bots de Discord a SkyList
+            a.button(href='/add') Agregar bot 
+            a.button(href='')
+        #searchMore
+            | Would you like to 
+            a(href='/bots/search/') search all bots
+        #cards
+            span#loading Cargando...
